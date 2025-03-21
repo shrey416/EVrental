@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ReactDom from "react-dom/client";
 import App from "./App.jsx";
 import DashboardPage from "./Pages/Dashboard.page";
+import KYCPage from "./Pages/kyc.page.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <DashboardPage />,
+      },
+      {
+        path:"/kyc",
+        element: <KYCPage />,
       },
     ],
   },
