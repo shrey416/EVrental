@@ -5,16 +5,10 @@ const Sidebar = ({ expanded }) => {
   const location = useLocation();
 
   const navItems = [
-    { to: "/", icon: "fas fa-chart-pie", text: "Analytics" },
-    { to: "/cases", icon: "fas fa-balance-scale", text: "Cases" },
-    { to: "/case-search", icon: "fas fa-search", text: "Case Search" },
-    { to: "/matters", icon: "fa-solid fa-gavel", text: "Matters" },
-    { to: "/documents", icon: "fa-regular fa-folder-open", text: "Documents" },
-    { to: "/reports", icon: "fa-sharp fa-solid fa-file-chart-column", text: "Reports" },
-    { to: "/billing", icon: "fa-solid fa-receipt", text: "Billing" },
-    { to: "/scheduler", icon: "fas fa-calendar-alt", text: "Scheduler" },
-    { to: "/ai-assist", icon: "fa-solid fa-microchip-ai", text: "AI Assist" },
-    { to: "/pdf-tools", icon: "fas fa-file-pdf", text: "PDF Tools" },
+    { to: "/", icon: "fas fa-chart-pie", text: "Dashboard" },
+    { to: "/kyc", icon: "fas fa-id-card", text: "KYC" },
+    { to: "/orders", icon: "fa-solid fa-cart-shopping", text: "Orders" },
+    { to: "/settings", icon: "fas fa-gear", text: "Settings" },
   ];
 
   return (
@@ -38,7 +32,7 @@ const Sidebar = ({ expanded }) => {
             expanded ? "opacity-100" : "opacity-0"
           } ${!expanded && "hidden"}`}
         >
-          EcoRide
+          Eco Wheels
         </span>
       </div>
 
